@@ -10,9 +10,9 @@ const app = express();
 // Enable CORS for all routes with specific settings
 app.use(
   cors({
-    credentials: true,
-    origin: "http://localhost:5173",
+    origin: ["https://deploy-mern-1whq.vercel.app"],
     methods: ["POST", "GET"],
+    credentials: true,
   })
 );
 
